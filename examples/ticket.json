@@ -1,0 +1,10 @@
+{
+  "id": "187",
+  "createdDateTime": "2026-09-12T17:02:11Z",
+  "fields": {
+    "Title": "Billing page says payment failed but I still have Pro",
+    "ReporterEmail": "maya.lindqvist@example.com",
+    "Product": "Billing",
+    "Description": "Since Sept 3 my billing page shows a red 'Payment failed' banner. I never got an email about it and my workspace still says Pro. My card expired last month. Will I lose access without warning?"
+  }
+}

@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.pgdata/
+.env
+
+# Local-only: blog drafts and workspace agent instructions
+blogs/
+AGENTS.md

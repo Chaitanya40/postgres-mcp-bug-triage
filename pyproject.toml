@@ -1,0 +1,29 @@
+[project]
+name = "triage-mcp"
+version = "0.1.0"
+description = "A read-only Postgres MCP server and a Claude agent for automated bug triage"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mcp[cli]==2.2.0",
+    "anthropic[mcp]==1.6.0",
+    "psycopg[binary]==3.3.5",
+    "sqlglot==30.18.0",
+    "uvicorn==0.53.0",
+]
+
+[project.scripts]
+triage-agent = "triage_mcp.agent:main"
+
+[dependency-groups]
+dev = [
+    "pytest==9.1.1",
+    "pgserver==0.1.4",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.15,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
